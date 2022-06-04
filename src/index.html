@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.scss" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="grid-container card">
+      <article class="overlay">
+        <picture>
+          <source srcset="./images/image-header-desktop.jpg" />
+          <!-- <div class="hero"> -->
+          <!-- <div class="hero-img"></div> -->
+          <!-- <div class="hero-img"></div> -->
+          <img
+            class="hero-img"
+            src="./images/image-header-mobile.jpg"
+            alt="header image"
+          />
+          <!-- <img hidden src="./images/image-header-desktop.jpg" /> -->
+        </picture>
+      </article>
+      <div class="hero-content">
+        <h1 class="h1">
+          Get <span class="hilite">insights</span> that help your business grow.
+        </h1>
+        <p class="p">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+      </div>
+      <!-- </div> -->
+      <div class="eyebrow-container">
+        <div class="eyebrow-element">
+          <h4 class="eyebrow">10k+</h4>
+          <p class="small">companies</p>
+        </div>
+        <div class="eyebrow-element">
+          <h4 class="eyebrow">314</h4>
+          <p class="small">templates</p>
+        </div>
+        <div class="eyebrow-element">
+          <h4 class="eyebrow">12m+</h4>
+          <p class="small">queries</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

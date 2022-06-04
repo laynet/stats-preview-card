@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$font-family: 'Inter', sans-serif;
+$font-family-alt: 'Lexend Deca', sans-serif;
+
+$darkest-purple: hsla(233, 47%, 7%, 1);
+$dark-purple: hsla(246, 38%, 16%, 1);
+
+$accent: hsl(277, 64%, 61%);
+$text-hilite: hsla(277, 64%, 61%, 1);
+$text-light: hsla(0, 0%, 100%, 1);
+$text-dark: hsla(0, 0%, 100%, 0.6);
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $darkest-purple;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+// img {
+//   max-width: 100%;
+//   display: block;
+// }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.h1 {
+  font-weight: 700;
+  color: $text-light;
+}
+
+.p {
+  font-weight: 400;
+  color: $text-dark;
+  line-height: 25px;
+}
+
+.eyebrow-element {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: $text-light;
+  font-size: 1.5rem;
+}
+
+.small {
+  font-family: $font-family-alt;
+  font-weight: 400;
+  color: $text-dark;
+  text-transform: uppercase;
+}
+
+.hilite {
+  color: $text-hilite;
+}
+
+// Layout
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  //   place-items: center stretch;
+  padding-bottom: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: $dark-purple;
+  width: 100%;
+  max-width: 540px;
+  margin: auto;
+}
+.overlay {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: $accent;
+}
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0;
+  background-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.hero-content {
+  grid-area: 'hero-content';
+  padding: 2.5rem 2.5rem 0 2.5rem;
+
+  h1,
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.eyebrow-container {
+  grid-area: 'eyebrow';
+}
+
+// .attribution {
+//   font-size: 11px;
+//   text-align: center;
+// }
+// .attribution a {
+//   color: hsl(228, 45%, 44%);
+// }
