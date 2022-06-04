@@ -40,21 +40,6 @@ body {
   padding: 1rem;
 }
 
-// img {
-//   max-width: 100%;
-//   display: block;
-// }
-
-// .grid {
-//   display: grid;
-//   gap: 1rem;
-// }
-
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
 .h1 {
   font-weight: 700;
   color: $text-light;
@@ -161,13 +146,6 @@ img {
   @media (min-width: 1120px) {
     text-align: left;
     padding: 1rem 7rem 0 4.5rem;
-    // align-items: left;
-  }
-}
-
-.hero-main {
-  @media (min-width: 1120px) {
-    // max-width: fit-content;
   }
 }
 
